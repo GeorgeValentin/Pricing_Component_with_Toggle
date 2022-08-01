@@ -10,41 +10,168 @@
   <!-- CSS StyleSheets -->
   <link rel="stylesheet" href="./dist/css/main.css">
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
   <title>Pricing Component with Toggle</title>
 
 </head>
+
 <body>
 
-  <header>
-    Our Pricing
-    Annually
-    Monthly
+  <div class="background-top-image">
+  </div>
+
+  <header class="pricing-header flex flex-column centered-flex-container">
+    <div class="pricing-header_top">
+      Our Pricing
+    </div>
+
+    <div class="pricing-header_content flex flex-row centered-flex-container">
+      <div class="header-content-elem">
+        Annually
+      </div>
+
+      <a>switch</a>
+      <div class="header-content-elem">
+        Monthly
+      </div>
+    </div>
+
   </header>
 
-  <main>
-    Basic
-    &dollar;19.99
-    &dollar;199.99
-    500 GB Storage
-    2 Users Allowed
-    Send up to 3 GB
-    Learn More
+  <main class="pricing-component grid centered-grid-container">
 
-    Professional
-    &dollar;24.99
-    &dollar;249.99
-    1 TB Storage
-    5 Users Allowed
-    Send up to 10 GB
-    Learn More
+    <section class="pricing-component_item full-card-width secondary-height">
+      <h2 class="item-title text-centered">
+        Basic
+      </h2>
 
-    Master
-    &dollar;39.99
-    &dollar;399.99
-    2 TB Storage
-    10 Users Allowed
-    Send up to 20 GB
-    Learn More
+      <h1 class="item-value flex flex-row centered-flex-container annually text-centered">
+        <div class="item-value-currency">
+          &dollar;
+        </div>
+        <div class="item-value-amount">
+          199.99
+        </div>
+      </h1>
+
+      <h1 class="item-value monthly text-centered">
+        <div class="item-value-currency">
+          &dollar;
+        </div>
+        <div class="item-value-amount">
+          19.99
+        </div>
+      </h1>
+
+      <ul class="item-package-options">
+        <li class="item-package-option text-centered">
+          500 GB Storage
+        </li>
+        <li class="item-package-option text-centered">
+          2 Users Allowed
+        </li>
+        <li class="item-package-option text-centered">
+          Send up to 3 GB
+        </li>
+      </ul>
+
+      <div class="item-learn-btn text-centered">
+        Learn More
+      </div>
+    </section>
+
+    <section id="principal-card" class="pricing-component_item full-card-width full-card-height">
+      <h2 class="item-title text-centered">
+        Professional
+      </h2>
+
+      <h1 class="item-value flex flex-row centered-flex-container annually text-centered">
+        <div class="item-value-currency">
+          &dollar;
+        </div>
+
+        <div class="item-value-amount">
+          249.99
+        </div>
+      </h1>
+
+      <h1 class="item-value monthly text-centered">
+        <div class="item-value-currency">
+          &dollar;
+        </div>
+        <div class="item-value-amount">
+          24.99
+        </div>
+      </h1>
+
+      <ul class="item-package-options">
+        <li class="item-package-option text-centered">
+          1 TB Storage
+        </li>
+        <li class="item-package-option text-centered">
+          5 Users Allowed
+        </li>
+        <li class="item-package-option text-centered">
+          Send up to 10 GB
+        </li>
+      </ul>
+
+      <div id="principal-card-learn-btn" class="text-centered">
+        <div id="principal-card-learn-btn-text">
+          Learn More
+        </div>
+      </div>
+
+    </section>
+
+    <section class="pricing-component_item full-card-width secondary-height">
+      <h2 class="item-title text-centered">
+        Master
+      </h2>
+
+      <h1 class="item-value flex flex-row centered-flex-container annually text-centered">
+        <div class="item-value-currency">
+          &dollar;
+        </div>
+        <div class="item-value-amount">
+          399.99
+        </div>
+      </h1>
+
+      <h1 class="item-value monthly text-centered">
+        <div class="item-value-currency">
+          &dollar;
+        </div>
+        <div class="item-value-amount">
+          39.99
+        </div>
+      </h1>
+
+      <ul class="item-package-options">
+        <li class="item-package-option text-centered">
+          2 TB Storage
+        </li>
+        <li class="item-package-option text-centered">
+          10 Users Allowed
+        </li>
+        <li class="item-package-option text-centered">
+          Send up to 20 GB
+        </li>
+      </ul>
+
+      <div class="item-learn-btn  text-centered">
+        Learn More
+      </div>
+
+    </section>
+
   </main>
+
+  <div class="background-bottom-image">
+  </div>
 </body>
 </html>

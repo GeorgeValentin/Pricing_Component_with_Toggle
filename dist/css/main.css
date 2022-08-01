@@ -1,1 +1,172 @@
-/*# sourceMappingURL=main.css.map */
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.centered-grid-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-flex-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.full-card-height {
+  height: 100%;
+}
+
+.secondary-height {
+  height: 90%;
+}
+
+.full-card-width {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 15px;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(240deg, 78%, 98%);
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+.background-top-image {
+  background-image: url(../../images/bg-top.svg);
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  height: 85%;
+  width: 33%;
+  background-repeat: no-repeat;
+  background-position: 19px 0px;
+}
+
+.background-bottom-image {
+  background-image: url("../../images/bg-bottom.svg");
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  bottom: 0;
+  height: 37%;
+  width: 30%;
+  background-repeat: no-repeat;
+  background-position: -2px 0px;
+}
+
+.pricing-header {
+  position: relative;
+  z-index: 1;
+  padding: 7rem 0rem 3rem;
+  text-align: center;
+}
+.pricing-header_content {
+  gap: 1rem;
+}
+
+.pricing-component {
+  grid-template-columns: repeat(3, 1fr);
+  height: 54%;
+  margin: 0 11rem;
+  width: 30%;
+  margin: auto;
+}
+.pricing-component #principal-card {
+  background: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  color: hsl(240deg, 78%, 98%);
+  padding: 3rem 1.5rem;
+}
+.pricing-component #principal-card .item-title {
+  color: hsl(240deg, 78%, 98%);
+}
+.pricing-component #principal-card .item-package-options .item-package-option {
+  border-top: 1px solid hsl(234deg, 14%, 74%);
+}
+.pricing-component #principal-card .item-package-options .item-package-option:last-of-type {
+  border-bottom: 1px solid hsl(234deg, 14%, 74%);
+}
+.pricing-component #principal-card #principal-card-learn-btn {
+  margin-top: 1.75rem;
+  background-color: hsl(240deg, 78%, 98%) !important;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
+.pricing-component #principal-card #principal-card-learn-btn #principal-card-learn-btn-text {
+  background-image: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.pricing-component_item {
+  border-radius: 0.75rem;
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+}
+.pricing-component_item .item-title {
+  font-size: 0.9rem;
+  color: hsl(233deg, 13%, 49%);
+  margin-bottom: 1.25rem;
+}
+.pricing-component_item .item-value {
+  font-size: 3.5rem;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+.pricing-component_item .item-value .item-value-currency {
+  font-size: 1.9rem;
+}
+.pricing-component_item .monthly {
+  display: none;
+}
+.pricing-component_item .item-package-options {
+  list-style-type: none;
+}
+.pricing-component_item .item-package-options .item-package-option {
+  border-top: 1px solid hsl(233deg, 13%, 49%);
+  margin-bottom: 0.25rem;
+  padding: 0.75rem 0rem 0.6rem;
+}
+.pricing-component_item .item-package-options .item-package-option:last-of-type {
+  border-bottom: 1px solid hsl(234deg, 14%, 74%);
+}
+.pricing-component_item .item-learn-btn {
+  margin-top: 1.5rem;
+  background-image: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  color: #fff;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
+.pricing-component_item .item-learn-btn .item-learn-btn-text {
+  color: hsl(240deg, 78%, 98%);
+}/*# sourceMappingURL=main.css.map */
