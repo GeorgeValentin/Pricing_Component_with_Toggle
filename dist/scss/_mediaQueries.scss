@@ -1,0 +1,30 @@
+@media(max-width: 375px) {
+    .background-top-image {
+        background-size: cover;
+        height: 72%;
+        width: 74%;
+        background-position: 106px -21px;
+    }
+
+    .background-bottom-image {
+        display: none;
+    }
+    
+    .pricing-header {
+        padding: 3rem 0rem;
+    }
+    
+    .pricing-component {
+        grid-template-columns: 1fr;
+        margin: 0 11rem;
+        width: 88%;
+        margin: auto;
+        padding-bottom: 4rem;
+        gap: 2rem;
+        height: unset;
+
+        .secondary-height {
+            height: 100%;
+        }
+    }
+}
