@@ -27,11 +27,12 @@ This is a solution to the [Pricing component with toggle challenge on Frontend M
 
 - Semantic HTML5 markup
 - Scss
+- Scss Mixins
 - Flexbox
 - Grid
 - Responsive Design
-- Scss Mixins
 - Media queries
+- JavaScript
 
 ### What I learned
 
