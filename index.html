@@ -15,6 +15,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/56c21d17b5.js" crossorigin="anonymous"></script>
+
+  <!-- JavaScript -->
+  <script src="./js/script.js"></script>
+
   <title>Pricing Component with Toggle</title>
 
 </head>
@@ -34,7 +40,11 @@
         Annually
       </div>
 
-      <a>switch</a>
+      <div class="header-switch flex centered-flex-container">
+        <i class="fa-solid fa-toggle-off switch-off"></i>
+        <i class="fa-solid fa-toggle-on switch-on"></i>
+      </div>
+
       <div class="header-content-elem">
         Monthly
       </div>
@@ -58,7 +68,7 @@
         </div>
       </h1>
 
-      <h1 class="item-value monthly text-centered">
+      <h1 class="item-value flex flex-row centered-flex-container monthly text-centered">
         <div class="item-value-currency">
           &dollar;
         </div>
@@ -80,7 +90,9 @@
       </ul>
 
       <div class="item-learn-btn text-centered">
-        Learn More
+        <a class="item-learn-btn-text">
+          Learn More
+        </a>
       </div>
     </section>
 
@@ -99,11 +111,11 @@
         </div>
       </h1>
 
-      <h1 class="item-value monthly text-centered">
-        <div class="item-value-currency">
+      <h1 class="item-value flex flex-row centered-flex-container monthly text-centered">
+        <div class="item-value_currency">
           &dollar;
         </div>
-        <div class="item-value-amount">
+        <div class="item-value_amount">
           24.99
         </div>
       </h1>
@@ -121,9 +133,9 @@
       </ul>
 
       <div id="principal-card-learn-btn" class="text-centered">
-        <div id="principal-card-learn-btn-text">
+        <a id="principal-card-learn-btn-text">
           Learn More
-        </div>
+        </a>
       </div>
 
     </section>
@@ -142,7 +154,7 @@
         </div>
       </h1>
 
-      <h1 class="item-value monthly text-centered">
+      <h1 class="item-value flex flex-row centered-flex-container monthly text-centered">
         <div class="item-value-currency">
           &dollar;
         </div>
@@ -163,8 +175,10 @@
         </li>
       </ul>
 
-      <div class="item-learn-btn  text-centered">
-        Learn More
+      <div class="item-learn-btn text-centered">
+        <a class="item-learn-btn-text">
+          Learn More
+        </a>
       </div>
 
     </section>

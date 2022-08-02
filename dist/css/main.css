@@ -68,9 +68,9 @@ main {
   z-index: 0;
   right: 0;
   height: 85%;
-  width: 33%;
+  width: 32%;
   background-repeat: no-repeat;
-  background-position: 19px 0px;
+  background-position: 90px 0px;
 }
 
 .background-bottom-image {
@@ -91,15 +91,51 @@ main {
   padding: 7rem 0rem 3rem;
   text-align: center;
 }
+.pricing-header_top {
+  font-size: 1.55rem;
+  color: hsl(233deg, 13%, 49%);
+}
 .pricing-header_content {
   gap: 1rem;
+}
+.pricing-header_content .header-content-elem {
+  color: hsl(234deg, 14%, 74%);
+}
+.pricing-header_content .header-switch {
+  height: 4rem;
+  width: 4rem;
+  cursor: pointer;
+}
+.pricing-header_content .header-switch .switch-on {
+  display: none;
+}
+.pricing-header_content .header-switch .show-switch {
+  display: flex;
+}
+.pricing-header_content .header-switch .hide-switch {
+  display: none;
+}
+.pricing-header_content .header-switch i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.pricing-header_content .header-switch i::before {
+  transform: scale(2.5);
+  display: inline-block;
+  background-image: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .pricing-component {
   grid-template-columns: repeat(3, 1fr);
   height: 54%;
   margin: 0 11rem;
-  width: 30%;
+  width: 72%;
   margin: auto;
 }
 .pricing-component #principal-card {
@@ -116,17 +152,37 @@ main {
 .pricing-component #principal-card .item-package-options .item-package-option:last-of-type {
   border-bottom: 1px solid hsl(234deg, 14%, 74%);
 }
+.pricing-component #principal-card .item-value {
+  color: hsl(240deg, 78%, 98%);
+}
+.pricing-component #principal-card .item-package-options {
+  color: hsl(240deg, 78%, 98%);
+}
 .pricing-component #principal-card #principal-card-learn-btn {
   margin-top: 1.75rem;
   background-color: hsl(240deg, 78%, 98%) !important;
+  border: 1.5px solid;
+  border-image: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
   padding: 0.7rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 .pricing-component #principal-card #principal-card-learn-btn #principal-card-learn-btn-text {
   background-image: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.pricing-component #principal-card #principal-card-learn-btn:hover {
+  background-image: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image: none;
+  border-color: hsl(240deg, 78%, 98%);
+}
+.pricing-component #principal-card #principal-card-learn-btn:hover #principal-card-learn-btn-text {
+  background-image: linear-gradient(hsl(0deg, 0%, 100%), hsl(0deg, 0%, 100%));
 }
 .pricing-component_item {
   border-radius: 0.75rem;
@@ -142,18 +198,26 @@ main {
   font-size: 3.5rem;
   gap: 0.5rem;
   margin-bottom: 1.75rem;
+  color: hsl(232deg, 13%, 33%);
 }
-.pricing-component_item .item-value .item-value-currency {
+.pricing-component_item .item-value_currency {
   font-size: 1.9rem;
 }
 .pricing-component_item .monthly {
   display: none;
 }
+.pricing-component_item .hide-prices {
+  display: none;
+}
+.pricing-component_item .show-prices {
+  display: flex;
+}
 .pricing-component_item .item-package-options {
   list-style-type: none;
+  color: hsl(232deg, 13%, 33%);
 }
 .pricing-component_item .item-package-options .item-package-option {
-  border-top: 1px solid hsl(233deg, 13%, 49%);
+  border-top: 1px solid hsl(234deg, 14%, 74%);
   margin-bottom: 0.25rem;
   padding: 0.75rem 0rem 0.6rem;
 }
@@ -163,9 +227,21 @@ main {
 .pricing-component_item .item-learn-btn {
   margin-top: 1.5rem;
   background-image: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
-  color: #fff;
+  color: hsl(240deg, 78%, 98%);
   padding: 0.7rem;
   border-radius: 0.5rem;
+  cursor: pointer;
+  border: 1.5px solid hsl(240deg, 78%, 98%);
+}
+.pricing-component_item .item-learn-btn:hover {
+  background-image: linear-gradient(hsl(240deg, 78%, 98%), hsl(240deg, 78%, 98%));
+  border-color: hsl(236deg, 72%, 79%);
+}
+.pricing-component_item .item-learn-btn:hover .item-learn-btn-text {
+  background-image: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .pricing-component_item .item-learn-btn .item-learn-btn-text {
   color: hsl(240deg, 78%, 98%);
